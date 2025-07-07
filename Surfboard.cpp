@@ -3,6 +3,8 @@
 
 Surfboard::Surfboard(string brand, string model, double length, double width, double thickness, int quantity, double price)
 {
+	static int lastID = 0;
+	mId = ++lastID;
 	mBrand = brand;
 	mModel = model;
 	mLength = length;
