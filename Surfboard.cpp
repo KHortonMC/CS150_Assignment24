@@ -12,7 +12,7 @@ Surfboard::Surfboard(string brand, string model, double length, double width, do
 	mPrice = price;
 }
 
-bool Surfboard::operator==(const Surfboard& other)
+bool Surfboard::operator==(const Surfboard& other) const
 {
 	return mBrand == other.mBrand && mModel == other.mModel && mLength == other.mLength && mWidth == other.mWidth
 		&& mThickness == other.mThickness && mQuantity == other.mQuantity && mPrice == other.mPrice;
