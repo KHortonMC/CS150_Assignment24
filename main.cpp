@@ -60,8 +60,11 @@ int main()
 			// todo: cout << inventory << endl;
 			cout << "\nWhich ID# would you like to remove? (or -1 to cancel) >> ";
 			cin >> id;
-		        cout << "~~~Surfboard #" << id << " removed successfully~~~\n\n";
-		        cout << "~~~Surfboard #" << id << " not found\n\n";
+			// todo: if (inventory.removeBoard(id)) {
+		        	cout << "~~~Surfboard #" << id << " removed successfully~~~\n\n";
+			} else {
+			        cout << "~~~Surfboard #" << id << " not found\n\n";
+			}
 			
 			break;
 		case 3:
