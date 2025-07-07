@@ -38,7 +38,7 @@ public:
 	void setPrice(double price) { mPrice = price; }
 	void setQuantity(int quantity) { mQuantity = quantity; }
 
-	bool operator==(const Surfboard& other);
+	bool operator==(const Surfboard& other) const;
 
 	friend ostream& operator<<(ostream& os, const Surfboard& s);
 };
